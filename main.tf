@@ -17,4 +17,5 @@ module "notify_slack" {
   slack_emoji          = var.slack_emoji
   kms_key_arn          = var.kms_key_arn
   sns_topic_name       = var.sns_topic_name
+  tags                 = module.this.tags
 }
