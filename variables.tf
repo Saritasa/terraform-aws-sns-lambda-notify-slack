@@ -36,3 +36,15 @@ variable "sns_topic_name" {
   description = "Name of the SNS topic to subscribe to."
   default     = ""
 }
+
+variable "sns_topic_name" {
+  type        = string
+  description = "Name of the SNS topic to subscribe to."
+  default     = ""
+}
+
+variable "tags" {
+  description = "A map of tags to add to all resources"
+  type        = map(any)
+  default     = {}
+}
